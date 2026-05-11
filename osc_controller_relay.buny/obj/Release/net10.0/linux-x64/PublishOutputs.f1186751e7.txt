@@ -1,0 +1,5 @@
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Release/net10.0/linux-x64/publish/osc_controller_relay.buny.pdb
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Release/net10.0/linux-x64/publish/libcimgui.so
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Release/net10.0/linux-x64/publish/libraylib.so
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Release/net10.0/linux-x64/publish/rlImGui.pdb
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Release/net10.0/linux-x64/publish/osc_controller_relay.buny

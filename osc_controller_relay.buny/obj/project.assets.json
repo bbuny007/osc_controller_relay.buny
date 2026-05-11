@@ -1,0 +1,814 @@
+{
+  "version": 3,
+  "targets": {
+    "net10.0": {
+      "ImGui.NET/1.91.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libcimgui.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libcimgui.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Raylib-cs/7.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Raylib-cs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Raylib-cs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libraylib.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libraylib.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libraylib.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/raylib.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/raylib.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "sdl2/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "sdl2.redist": "2.0.5"
+        }
+      },
+      "SDL2-CS.NetCore/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SDL2-CS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SDL2-CS.dll": {}
+        }
+      },
+      "sdl2.nuget/2.32.8": {
+        "type": "package",
+        "dependencies": {
+          "sdl2.nuget.redist": "2.32.8"
+        }
+      },
+      "sdl2.nuget.redist/2.32.8": {
+        "type": "package"
+      },
+      "sdl2.redist/2.0.5": {
+        "type": "package"
+      },
+      "rlImgui-cs/3.2.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ImGui.NET": "1.91.6.1",
+          "Raylib-cs": "7.0.1"
+        },
+        "compile": {
+          "bin/placeholder/rlImgui-cs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/rlImgui-cs.dll": {}
+        }
+      },
+      "VolcanicArts.FastOSC/2.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/VolcanicArts.FastOSC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VolcanicArts.FastOSC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImGui.NET/1.91.6.1": {
+      "sha512": "Ph3j8pO6UM28PPJWP+5LEJSPVPkd8ivpVS8tRyY9b0IHn1HDIrMZ2o/FdiXaYW6YhNxMHmbevw6Jcfs+IDKi0Q==",
+      "type": "package",
+      "path": "imgui.net/1.91.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/ImGui.NET.targets",
+        "imgui.net.1.91.6.1.nupkg.sha512",
+        "imgui.net.nuspec",
+        "lib/net6.0/ImGui.NET.dll",
+        "lib/net6.0/ImGui.NET.xml",
+        "lib/net8.0/ImGui.NET.dll",
+        "lib/net8.0/ImGui.NET.xml",
+        "lib/netstandard2.0/ImGui.NET.dll",
+        "lib/netstandard2.0/ImGui.NET.xml",
+        "runtimes/linux-x64/native/libcimgui.so",
+        "runtimes/osx/native/libcimgui.dylib",
+        "runtimes/win-arm64/native/cimgui.dll",
+        "runtimes/win-x64/native/cimgui.dll",
+        "runtimes/win-x86/native/cimgui.dll"
+      ]
+    },
+    "Raylib-cs/7.0.2": {
+      "sha512": "tpisH03Z9AfdTKFTe7iIA7RNeSaQFE97A+7ApXJUaOHzg2hczBXA1J/2uF7teKHsVXSuGqoV2aHAbaeJJMqulw==",
+      "type": "package",
+      "path": "raylib-cs/7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Raylib-cs.dll",
+        "lib/net6.0/Raylib-cs.xml",
+        "lib/net8.0/Raylib-cs.dll",
+        "lib/net8.0/Raylib-cs.xml",
+        "raylib-cs.7.0.2.nupkg.sha512",
+        "raylib-cs.nuspec",
+        "raylib-cs_64x64.png",
+        "runtimes/linux-x64/native/libraylib.so",
+        "runtimes/osx-arm64/native/libraylib.dylib",
+        "runtimes/osx-x64/native/libraylib.dylib",
+        "runtimes/win-x64/native/raylib.dll",
+        "runtimes/win-x86/native/raylib.dll"
+      ]
+    },
+    "sdl2/2.0.5": {
+      "sha512": "HIpYBIe9qlG/U8hGRSiGW7YQARg9U78+pRKFikW9dCUvfZ1hFNpZwL4qeOUwcecwYk7i5sSlnwEiczcOysZDsA==",
+      "type": "package",
+      "path": "sdl2/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/default-propertiesui.xml",
+        "build/native/docs/README.txt",
+        "build/native/include/SDL.h",
+        "build/native/include/SDL_assert.h",
+        "build/native/include/SDL_atomic.h",
+        "build/native/include/SDL_audio.h",
+        "build/native/include/SDL_bits.h",
+        "build/native/include/SDL_blendmode.h",
+        "build/native/include/SDL_clipboard.h",
+        "build/native/include/SDL_config.h",
+        "build/native/include/SDL_cpuinfo.h",
+        "build/native/include/SDL_egl.h",
+        "build/native/include/SDL_endian.h",
+        "build/native/include/SDL_error.h",
+        "build/native/include/SDL_events.h",
+        "build/native/include/SDL_filesystem.h",
+        "build/native/include/SDL_gamecontroller.h",
+        "build/native/include/SDL_gesture.h",
+        "build/native/include/SDL_haptic.h",
+        "build/native/include/SDL_hints.h",
+        "build/native/include/SDL_joystick.h",
+        "build/native/include/SDL_keyboard.h",
+        "build/native/include/SDL_keycode.h",
+        "build/native/include/SDL_loadso.h",
+        "build/native/include/SDL_log.h",
+        "build/native/include/SDL_main.h",
+        "build/native/include/SDL_messagebox.h",
+        "build/native/include/SDL_mouse.h",
+        "build/native/include/SDL_mutex.h",
+        "build/native/include/SDL_name.h",
+        "build/native/include/SDL_opengl.h",
+        "build/native/include/SDL_opengl_glext.h",
+        "build/native/include/SDL_opengles.h",
+        "build/native/include/SDL_opengles2.h",
+        "build/native/include/SDL_opengles2_gl2.h",
+        "build/native/include/SDL_opengles2_gl2ext.h",
+        "build/native/include/SDL_opengles2_gl2platform.h",
+        "build/native/include/SDL_opengles2_khrplatform.h",
+        "build/native/include/SDL_pixels.h",
+        "build/native/include/SDL_platform.h",
+        "build/native/include/SDL_power.h",
+        "build/native/include/SDL_quit.h",
+        "build/native/include/SDL_rect.h",
+        "build/native/include/SDL_render.h",
+        "build/native/include/SDL_revision.h",
+        "build/native/include/SDL_rwops.h",
+        "build/native/include/SDL_scancode.h",
+        "build/native/include/SDL_shape.h",
+        "build/native/include/SDL_stdinc.h",
+        "build/native/include/SDL_surface.h",
+        "build/native/include/SDL_system.h",
+        "build/native/include/SDL_syswm.h",
+        "build/native/include/SDL_test.h",
+        "build/native/include/SDL_test_assert.h",
+        "build/native/include/SDL_test_common.h",
+        "build/native/include/SDL_test_compare.h",
+        "build/native/include/SDL_test_crc32.h",
+        "build/native/include/SDL_test_font.h",
+        "build/native/include/SDL_test_fuzzer.h",
+        "build/native/include/SDL_test_harness.h",
+        "build/native/include/SDL_test_images.h",
+        "build/native/include/SDL_test_log.h",
+        "build/native/include/SDL_test_md5.h",
+        "build/native/include/SDL_test_random.h",
+        "build/native/include/SDL_thread.h",
+        "build/native/include/SDL_timer.h",
+        "build/native/include/SDL_touch.h",
+        "build/native/include/SDL_types.h",
+        "build/native/include/SDL_version.h",
+        "build/native/include/SDL_video.h",
+        "build/native/include/begin_code.h",
+        "build/native/include/close_code.h",
+        "build/native/lib/Win32/dynamic/SDL2.lib",
+        "build/native/lib/Win32/dynamic/SDL2main.lib",
+        "build/native/lib/x64/dynamic/SDL2.lib",
+        "build/native/lib/x64/dynamic/SDL2main.lib",
+        "build/native/sdl2-propertiesui-27dcfa3c-5d71-4b1e-ac76-5275c5d53665.xml",
+        "build/native/sdl2.targets",
+        "build/publisher-info.txt",
+        "sdl2.2.0.5.nupkg.sha512",
+        "sdl2.nuspec"
+      ]
+    },
+    "SDL2-CS.NetCore/2.0.8": {
+      "sha512": "Nn1duzenQyZcFLkiA+hrFkOIB4+c1BbZzNyN2HqPg3+/wyaF2Yxeb8A5pbTmXoifTa3yjcURB+8CRE1GS8BpjA==",
+      "type": "package",
+      "path": "sdl2-cs.netcore/2.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SDL2-CS.dll",
+        "sdl2-cs.netcore.2.0.8.nupkg.sha512",
+        "sdl2-cs.netcore.nuspec"
+      ]
+    },
+    "sdl2.nuget/2.32.8": {
+      "sha512": "jGswgwBidAmE1+CiJjNoBSpD1PqfxszKwAQ2taoVaOyE4G34o1B+yqEhGVDYORKxts4dcVxdzAkSsL6WqlLSIg==",
+      "type": "package",
+      "path": "sdl2.nuget/2.32.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/default-propertiesui.xml",
+        "build/native/docs/BUGS.txt",
+        "build/native/docs/LICENSE.txt",
+        "build/native/docs/README-SDL.txt",
+        "build/native/docs/WhatsNew.txt",
+        "build/native/include/SDL.h",
+        "build/native/include/SDL_assert.h",
+        "build/native/include/SDL_atomic.h",
+        "build/native/include/SDL_audio.h",
+        "build/native/include/SDL_bits.h",
+        "build/native/include/SDL_blendmode.h",
+        "build/native/include/SDL_clipboard.h",
+        "build/native/include/SDL_config.h",
+        "build/native/include/SDL_config_android.h",
+        "build/native/include/SDL_config_emscripten.h",
+        "build/native/include/SDL_config_iphoneos.h",
+        "build/native/include/SDL_config_macosx.h",
+        "build/native/include/SDL_config_minimal.h",
+        "build/native/include/SDL_config_ngage.h",
+        "build/native/include/SDL_config_os2.h",
+        "build/native/include/SDL_config_pandora.h",
+        "build/native/include/SDL_config_windows.h",
+        "build/native/include/SDL_config_wingdk.h",
+        "build/native/include/SDL_config_winrt.h",
+        "build/native/include/SDL_config_xbox.h",
+        "build/native/include/SDL_copying.h",
+        "build/native/include/SDL_cpuinfo.h",
+        "build/native/include/SDL_egl.h",
+        "build/native/include/SDL_endian.h",
+        "build/native/include/SDL_error.h",
+        "build/native/include/SDL_events.h",
+        "build/native/include/SDL_filesystem.h",
+        "build/native/include/SDL_gamecontroller.h",
+        "build/native/include/SDL_gesture.h",
+        "build/native/include/SDL_guid.h",
+        "build/native/include/SDL_haptic.h",
+        "build/native/include/SDL_hidapi.h",
+        "build/native/include/SDL_hints.h",
+        "build/native/include/SDL_joystick.h",
+        "build/native/include/SDL_keyboard.h",
+        "build/native/include/SDL_keycode.h",
+        "build/native/include/SDL_loadso.h",
+        "build/native/include/SDL_locale.h",
+        "build/native/include/SDL_log.h",
+        "build/native/include/SDL_main.h",
+        "build/native/include/SDL_messagebox.h",
+        "build/native/include/SDL_metal.h",
+        "build/native/include/SDL_misc.h",
+        "build/native/include/SDL_mouse.h",
+        "build/native/include/SDL_mutex.h",
+        "build/native/include/SDL_name.h",
+        "build/native/include/SDL_opengl.h",
+        "build/native/include/SDL_opengl_glext.h",
+        "build/native/include/SDL_opengles.h",
+        "build/native/include/SDL_opengles2.h",
+        "build/native/include/SDL_opengles2_gl2.h",
+        "build/native/include/SDL_opengles2_gl2ext.h",
+        "build/native/include/SDL_opengles2_gl2platform.h",
+        "build/native/include/SDL_opengles2_khrplatform.h",
+        "build/native/include/SDL_pixels.h",
+        "build/native/include/SDL_platform.h",
+        "build/native/include/SDL_power.h",
+        "build/native/include/SDL_quit.h",
+        "build/native/include/SDL_rect.h",
+        "build/native/include/SDL_render.h",
+        "build/native/include/SDL_revision.h",
+        "build/native/include/SDL_rwops.h",
+        "build/native/include/SDL_scancode.h",
+        "build/native/include/SDL_sensor.h",
+        "build/native/include/SDL_shape.h",
+        "build/native/include/SDL_stdinc.h",
+        "build/native/include/SDL_surface.h",
+        "build/native/include/SDL_system.h",
+        "build/native/include/SDL_syswm.h",
+        "build/native/include/SDL_test.h",
+        "build/native/include/SDL_test_assert.h",
+        "build/native/include/SDL_test_common.h",
+        "build/native/include/SDL_test_compare.h",
+        "build/native/include/SDL_test_crc32.h",
+        "build/native/include/SDL_test_font.h",
+        "build/native/include/SDL_test_fuzzer.h",
+        "build/native/include/SDL_test_harness.h",
+        "build/native/include/SDL_test_images.h",
+        "build/native/include/SDL_test_log.h",
+        "build/native/include/SDL_test_md5.h",
+        "build/native/include/SDL_test_memory.h",
+        "build/native/include/SDL_test_random.h",
+        "build/native/include/SDL_thread.h",
+        "build/native/include/SDL_timer.h",
+        "build/native/include/SDL_touch.h",
+        "build/native/include/SDL_types.h",
+        "build/native/include/SDL_version.h",
+        "build/native/include/SDL_video.h",
+        "build/native/include/SDL_vulkan.h",
+        "build/native/include/begin_code.h",
+        "build/native/include/close_code.h",
+        "build/native/lib/Win32/SDL2.lib",
+        "build/native/lib/Win32/SDL2main.lib",
+        "build/native/lib/Win32/SDL2test.lib",
+        "build/native/lib/x64/SDL2.lib",
+        "build/native/lib/x64/SDL2main.lib",
+        "build/native/lib/x64/SDL2test.lib",
+        "build/native/sdl2.nuget.targets",
+        "build/publisher-info.txt",
+        "sdl2.nuget.2.32.8.nupkg.sha512",
+        "sdl2.nuget.nuspec"
+      ]
+    },
+    "sdl2.nuget.redist/2.32.8": {
+      "sha512": "sUabvqE7jFPibB3/E9ldZdKp/nyC961KFjzzqukvrlYcEahWyRJ3lZn5Tw0WR8E8KaCYFgmKeEf2DbhuylyZsw==",
+      "type": "package",
+      "path": "sdl2.nuget.redist/2.32.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/bin/Win32/SDL2.dll",
+        "build/native/bin/x64/SDL2.dll",
+        "build/native/default-propertiesui.xml",
+        "build/native/sdl2.nuget.redist.targets",
+        "build/publisher-info.txt",
+        "sdl2.nuget.redist.2.32.8.nupkg.sha512",
+        "sdl2.nuget.redist.nuspec"
+      ]
+    },
+    "sdl2.redist/2.0.5": {
+      "sha512": "eyTy0TvzTdkw9ZHrHR1TmaKb2uIbeKH33xhWctyteN5tjyOWUhiASkRuWfv4MLsynFXHMZtSIFtwTNlJGZYW3g==",
+      "type": "package",
+      "path": "sdl2.redist/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/bin/Win32/dynamic/SDL2.dll",
+        "build/native/bin/x64/dynamic/SDL2.dll",
+        "build/native/default-propertiesui.xml",
+        "build/native/sdl2.redist.targets",
+        "build/publisher-info.txt",
+        "sdl2.redist.2.0.5.nupkg.sha512",
+        "sdl2.redist.nuspec"
+      ]
+    },
+    "rlImgui-cs/3.2.0": {
+      "type": "project",
+      "path": "../rlImGui-cs/rlImGui/rlImGui.csproj",
+      "msbuildProject": "../rlImGui-cs/rlImGui/rlImGui.csproj"
+    },
+    "VolcanicArts.FastOSC/2.0.0": {
+      "type": "project",
+      "path": "../FastOSC/FastOSC/FastOSC.csproj",
+      "msbuildProject": "../FastOSC/FastOSC/FastOSC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net10.0": [
+      "ImGui.NET >= 1.91.6.1",
+      "Raylib-cs >= 7.0.2",
+      "SDL2-CS.NetCore >= 2.0.8",
+      "VolcanicArts.FastOSC >= 2.0.0",
+      "rlImgui-cs >= 3.2.0",
+      "sdl2 >= 2.0.5",
+      "sdl2.nuget >= 2.32.8"
+    ]
+  },
+  "packageFolders": {
+    "/home/bunny/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/osc_controller_relay.buny.csproj",
+      "projectName": "osc_controller_relay.buny",
+      "projectPath": "/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/osc_controller_relay.buny.csproj",
+      "packagesPath": "/home/bunny/.nuget/packages/",
+      "outputPath": "/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/bunny/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net10.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "projectReferences": {
+            "/home/bunny/Schreibtisch/osc_controller_relay.buny/FastOSC/FastOSC/FastOSC.csproj": {
+              "projectPath": "/home/bunny/Schreibtisch/osc_controller_relay.buny/FastOSC/FastOSC/FastOSC.csproj"
+            },
+            "/home/bunny/Schreibtisch/osc_controller_relay.buny/rlImGui-cs/rlImGui/rlImGui.csproj": {
+              "projectPath": "/home/bunny/Schreibtisch/osc_controller_relay.buny/rlImGui-cs/rlImGui/rlImGui.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net10.0": {
+        "targetAlias": "net10.0",
+        "dependencies": {
+          "ImGui.NET": {
+            "target": "Package",
+            "version": "[1.91.6.1, )"
+          },
+          "Raylib-cs": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "SDL2-CS.NetCore": {
+            "target": "Package",
+            "version": "[2.0.8, )"
+          },
+          "sdl2": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
+          "sdl2.nuget": {
+            "target": "Package",
+            "version": "[2.32.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/bunny/.dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json",
+        "packagesToPrune": {
+          "Microsoft.CSharp": "(,4.7.32767]",
+          "Microsoft.VisualBasic": "(,10.4.32767]",
+          "Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "Microsoft.Win32.Registry": "(,5.0.32767]",
+          "runtime.any.System.Collections": "(,4.3.32767]",
+          "runtime.any.System.Diagnostics.Tools": "(,4.3.32767]",
+          "runtime.any.System.Diagnostics.Tracing": "(,4.3.32767]",
+          "runtime.any.System.Globalization": "(,4.3.32767]",
+          "runtime.any.System.Globalization.Calendars": "(,4.3.32767]",
+          "runtime.any.System.IO": "(,4.3.32767]",
+          "runtime.any.System.Reflection": "(,4.3.32767]",
+          "runtime.any.System.Reflection.Extensions": "(,4.3.32767]",
+          "runtime.any.System.Reflection.Primitives": "(,4.3.32767]",
+          "runtime.any.System.Resources.ResourceManager": "(,4.3.32767]",
+          "runtime.any.System.Runtime": "(,4.3.32767]",
+          "runtime.any.System.Runtime.Handles": "(,4.3.32767]",
+          "runtime.any.System.Runtime.InteropServices": "(,4.3.32767]",
+          "runtime.any.System.Text.Encoding": "(,4.3.32767]",
+          "runtime.any.System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "runtime.any.System.Threading.Tasks": "(,4.3.32767]",
+          "runtime.any.System.Threading.Timer": "(,4.3.32767]",
+          "runtime.aot.System.Collections": "(,4.3.32767]",
+          "runtime.aot.System.Diagnostics.Tools": "(,4.3.32767]",
+          "runtime.aot.System.Diagnostics.Tracing": "(,4.3.32767]",
+          "runtime.aot.System.Globalization": "(,4.3.32767]",
+          "runtime.aot.System.Globalization.Calendars": "(,4.3.32767]",
+          "runtime.aot.System.IO": "(,4.3.32767]",
+          "runtime.aot.System.Reflection": "(,4.3.32767]",
+          "runtime.aot.System.Reflection.Extensions": "(,4.3.32767]",
+          "runtime.aot.System.Reflection.Primitives": "(,4.3.32767]",
+          "runtime.aot.System.Resources.ResourceManager": "(,4.3.32767]",
+          "runtime.aot.System.Runtime": "(,4.3.32767]",
+          "runtime.aot.System.Runtime.Handles": "(,4.3.32767]",
+          "runtime.aot.System.Runtime.InteropServices": "(,4.3.32767]",
+          "runtime.aot.System.Text.Encoding": "(,4.3.32767]",
+          "runtime.aot.System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "runtime.aot.System.Threading.Tasks": "(,4.3.32767]",
+          "runtime.aot.System.Threading.Timer": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.unix.Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "runtime.unix.System.Console": "(,4.3.32767]",
+          "runtime.unix.System.Diagnostics.Debug": "(,4.3.32767]",
+          "runtime.unix.System.IO.FileSystem": "(,4.3.32767]",
+          "runtime.unix.System.Net.Primitives": "(,4.3.32767]",
+          "runtime.unix.System.Net.Sockets": "(,4.3.32767]",
+          "runtime.unix.System.Private.Uri": "(,4.3.32767]",
+          "runtime.unix.System.Runtime.Extensions": "(,4.3.32767]",
+          "runtime.win.Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "runtime.win.System.Console": "(,4.3.32767]",
+          "runtime.win.System.Diagnostics.Debug": "(,4.3.32767]",
+          "runtime.win.System.IO.FileSystem": "(,4.3.32767]",
+          "runtime.win.System.Net.Primitives": "(,4.3.32767]",
+          "runtime.win.System.Net.Sockets": "(,4.3.32767]",
+          "runtime.win.System.Runtime.Extensions": "(,4.3.32767]",
+          "runtime.win10-arm-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win10-arm64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win10-x64-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win10-x86-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win7-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win7-x86.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win7.System.Private.Uri": "(,4.3.32767]",
+          "runtime.win8-arm.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "System.AppContext": "(,4.3.32767]",
+          "System.Buffers": "(,5.0.32767]",
+          "System.Collections": "(,4.3.32767]",
+          "System.Collections.Concurrent": "(,4.3.32767]",
+          "System.Collections.Immutable": "(,10.0.32767]",
+          "System.Collections.NonGeneric": "(,4.3.32767]",
+          "System.Collections.Specialized": "(,4.3.32767]",
+          "System.ComponentModel": "(,4.3.32767]",
+          "System.ComponentModel.Annotations": "(,4.3.32767]",
+          "System.ComponentModel.EventBasedAsync": "(,4.3.32767]",
+          "System.ComponentModel.Primitives": "(,4.3.32767]",
+          "System.ComponentModel.TypeConverter": "(,4.3.32767]",
+          "System.Console": "(,4.3.32767]",
+          "System.Data.Common": "(,4.3.32767]",
+          "System.Data.DataSetExtensions": "(,4.4.32767]",
+          "System.Diagnostics.Contracts": "(,4.3.32767]",
+          "System.Diagnostics.Debug": "(,4.3.32767]",
+          "System.Diagnostics.DiagnosticSource": "(,10.0.32767]",
+          "System.Diagnostics.FileVersionInfo": "(,4.3.32767]",
+          "System.Diagnostics.Process": "(,4.3.32767]",
+          "System.Diagnostics.StackTrace": "(,4.3.32767]",
+          "System.Diagnostics.TextWriterTraceListener": "(,4.3.32767]",
+          "System.Diagnostics.Tools": "(,4.3.32767]",
+          "System.Diagnostics.TraceSource": "(,4.3.32767]",
+          "System.Diagnostics.Tracing": "(,4.3.32767]",
+          "System.Drawing.Primitives": "(,4.3.32767]",
+          "System.Dynamic.Runtime": "(,4.3.32767]",
+          "System.Formats.Asn1": "(,10.0.32767]",
+          "System.Formats.Tar": "(,10.0.32767]",
+          "System.Globalization": "(,4.3.32767]",
+          "System.Globalization.Calendars": "(,4.3.32767]",
+          "System.Globalization.Extensions": "(,4.3.32767]",
+          "System.IO": "(,4.3.32767]",
+          "System.IO.Compression": "(,4.3.32767]",
+          "System.IO.Compression.ZipFile": "(,4.3.32767]",
+          "System.IO.FileSystem": "(,4.3.32767]",
+          "System.IO.FileSystem.AccessControl": "(,4.4.32767]",
+          "System.IO.FileSystem.DriveInfo": "(,4.3.32767]",
+          "System.IO.FileSystem.Primitives": "(,4.3.32767]",
+          "System.IO.FileSystem.Watcher": "(,4.3.32767]",
+          "System.IO.IsolatedStorage": "(,4.3.32767]",
+          "System.IO.MemoryMappedFiles": "(,4.3.32767]",
+          "System.IO.Pipelines": "(,10.0.32767]",
+          "System.IO.Pipes": "(,4.3.32767]",
+          "System.IO.Pipes.AccessControl": "(,5.0.32767]",
+          "System.IO.UnmanagedMemoryStream": "(,4.3.32767]",
+          "System.Linq": "(,4.3.32767]",
+          "System.Linq.AsyncEnumerable": "(,10.0.32767]",
+          "System.Linq.Expressions": "(,4.3.32767]",
+          "System.Linq.Parallel": "(,4.3.32767]",
+          "System.Linq.Queryable": "(,4.3.32767]",
+          "System.Memory": "(,5.0.32767]",
+          "System.Net.Http": "(,4.3.32767]",
+          "System.Net.Http.Json": "(,10.0.32767]",
+          "System.Net.NameResolution": "(,4.3.32767]",
+          "System.Net.NetworkInformation": "(,4.3.32767]",
+          "System.Net.Ping": "(,4.3.32767]",
+          "System.Net.Primitives": "(,4.3.32767]",
+          "System.Net.Requests": "(,4.3.32767]",
+          "System.Net.Security": "(,4.3.32767]",
+          "System.Net.ServerSentEvents": "(,10.0.32767]",
+          "System.Net.Sockets": "(,4.3.32767]",
+          "System.Net.WebHeaderCollection": "(,4.3.32767]",
+          "System.Net.WebSockets": "(,4.3.32767]",
+          "System.Net.WebSockets.Client": "(,4.3.32767]",
+          "System.Numerics.Vectors": "(,5.0.32767]",
+          "System.ObjectModel": "(,4.3.32767]",
+          "System.Private.DataContractSerialization": "(,4.3.32767]",
+          "System.Private.Uri": "(,4.3.32767]",
+          "System.Reflection": "(,4.3.32767]",
+          "System.Reflection.DispatchProxy": "(,6.0.32767]",
+          "System.Reflection.Emit": "(,4.7.32767]",
+          "System.Reflection.Emit.ILGeneration": "(,4.7.32767]",
+          "System.Reflection.Emit.Lightweight": "(,4.7.32767]",
+          "System.Reflection.Extensions": "(,4.3.32767]",
+          "System.Reflection.Metadata": "(,10.0.32767]",
+          "System.Reflection.Primitives": "(,4.3.32767]",
+          "System.Reflection.TypeExtensions": "(,4.3.32767]",
+          "System.Resources.Reader": "(,4.3.32767]",
+          "System.Resources.ResourceManager": "(,4.3.32767]",
+          "System.Resources.Writer": "(,4.3.32767]",
+          "System.Runtime": "(,4.3.32767]",
+          "System.Runtime.CompilerServices.Unsafe": "(,7.0.32767]",
+          "System.Runtime.CompilerServices.VisualC": "(,4.3.32767]",
+          "System.Runtime.Extensions": "(,4.3.32767]",
+          "System.Runtime.Handles": "(,4.3.32767]",
+          "System.Runtime.InteropServices": "(,4.3.32767]",
+          "System.Runtime.InteropServices.RuntimeInformation": "(,4.3.32767]",
+          "System.Runtime.Loader": "(,4.3.32767]",
+          "System.Runtime.Numerics": "(,4.3.32767]",
+          "System.Runtime.Serialization.Formatters": "(,4.3.32767]",
+          "System.Runtime.Serialization.Json": "(,4.3.32767]",
+          "System.Runtime.Serialization.Primitives": "(,4.3.32767]",
+          "System.Runtime.Serialization.Xml": "(,4.3.32767]",
+          "System.Security.AccessControl": "(,6.0.32767]",
+          "System.Security.Claims": "(,4.3.32767]",
+          "System.Security.Cryptography.Algorithms": "(,4.3.32767]",
+          "System.Security.Cryptography.Cng": "(,5.0.32767]",
+          "System.Security.Cryptography.Csp": "(,4.3.32767]",
+          "System.Security.Cryptography.Encoding": "(,4.3.32767]",
+          "System.Security.Cryptography.OpenSsl": "(,5.0.32767]",
+          "System.Security.Cryptography.Primitives": "(,4.3.32767]",
+          "System.Security.Cryptography.X509Certificates": "(,4.3.32767]",
+          "System.Security.Principal": "(,4.3.32767]",
+          "System.Security.Principal.Windows": "(,5.0.32767]",
+          "System.Security.SecureString": "(,4.3.32767]",
+          "System.Text.Encoding": "(,4.3.32767]",
+          "System.Text.Encoding.CodePages": "(,10.0.32767]",
+          "System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "System.Text.Encodings.Web": "(,10.0.32767]",
+          "System.Text.Json": "(,10.0.32767]",
+          "System.Text.RegularExpressions": "(,4.3.32767]",
+          "System.Threading": "(,4.3.32767]",
+          "System.Threading.AccessControl": "(,10.0.32767]",
+          "System.Threading.Channels": "(,10.0.32767]",
+          "System.Threading.Overlapped": "(,4.3.32767]",
+          "System.Threading.Tasks": "(,4.3.32767]",
+          "System.Threading.Tasks.Dataflow": "(,10.0.32767]",
+          "System.Threading.Tasks.Extensions": "(,5.0.32767]",
+          "System.Threading.Tasks.Parallel": "(,4.3.32767]",
+          "System.Threading.Thread": "(,4.3.32767]",
+          "System.Threading.ThreadPool": "(,4.3.32767]",
+          "System.Threading.Timer": "(,4.3.32767]",
+          "System.ValueTuple": "(,4.5.32767]",
+          "System.Xml.ReaderWriter": "(,4.3.32767]",
+          "System.Xml.XDocument": "(,4.3.32767]",
+          "System.Xml.XmlDocument": "(,4.3.32767]",
+          "System.Xml.XmlSerializer": "(,4.3.32767]",
+          "System.Xml.XPath": "(,4.3.32767]",
+          "System.Xml.XPath.XDocument": "(,5.0.32767]"
+        }
+      }
+    }
+  }
+}
