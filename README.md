@@ -31,6 +31,8 @@ i fogor to make a repo sorry
 i may or may not have used a lil claude (free plan ofc) to
 code me the controller handler (because im lazy and dont want to copy paste alot for the diffrent buttons)
 and to help me structure my code better (nothing rewritten just basic codeing knowledge)
+
+So basically instead of googling i used the awnsers of claude sorry if this repells some of yall but it is what it is and im too socially aquawrd to ask simple questions 
 ## Licensing
 
 This project is licensed under the MIT License — see LICENSE for details.
