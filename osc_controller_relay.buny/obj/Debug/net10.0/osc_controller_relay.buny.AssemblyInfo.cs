@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("osc_controller_relay.buny")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2e1ac84b0029315fbc1a9662f2d20a7f8bf666e")]
 [assembly: System.Reflection.AssemblyProductAttribute("osc_controller_relay.buny")]
 [assembly: System.Reflection.AssemblyTitleAttribute("osc_controller_relay.buny")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,7 +26,18 @@ namespace osc_controller_relay.buny {
                 Console.WriteLine($"SDL init failed: {SDL.SDL_GetError()}");
             }
             _ = ControllerInput.ControllerHandling();
-            _ = Osc.OscHandling();
+             _ = Task.Run(async () =>  // change this
+    {
+        try
+        {
+            await Osc.OscHandling();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"OscHandling crashed: {e.Message}");
+            Console.WriteLine(e.StackTrace);
+        }
+    });
             Raylib.InitWindow(Config.WindowWidth, Config.WindowHeight, Config.WindowTitle);
             Raylib.SetTargetFPS(Config.TargetFps);
             rlImGui.Setup(true);

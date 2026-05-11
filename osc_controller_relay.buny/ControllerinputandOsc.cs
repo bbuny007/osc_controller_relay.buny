@@ -288,11 +288,11 @@ public static class Osc
         }
     }
 
-    static void Send(string address, float value)
+    static async void Send(string address, float value)
     {
         try
         {
-            _sender.Send(new OSCMessage(address, value));
+            await _sender.Send(new OSCMessage(address, value));
         }
         catch (Exception e)
         {

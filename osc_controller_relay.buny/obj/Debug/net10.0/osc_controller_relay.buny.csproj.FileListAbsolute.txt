@@ -31,3 +31,4 @@
 /home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Debug/net10.0/FastOSC.dll
 /home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Debug/net10.0/FastOSC.pdb
 /home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/bin/Debug/net10.0/SDL2-CS.dll
+/home/bunny/Schreibtisch/osc_controller_relay.buny/osc_controller_relay.buny/obj/Debug/net10.0/osc_controller_relay.buny.sourcelink.json

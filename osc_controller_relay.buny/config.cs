@@ -5,7 +5,7 @@ namespace osc_controller_relay.buny
 {
     // Network
     public static string TargetIp      = "127.0.0.1";
-    public static int    TargetPort    = 9069;
+    public static int    TargetPort    = 9067;
     public static int    ListenPort    = 9001;
 
     // OSC
